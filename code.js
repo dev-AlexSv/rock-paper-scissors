@@ -54,12 +54,14 @@ function playRound() {
     console.log(playerScore, computerScore);
 }
 
-function playGame() {
-    for (let i = 0; i < 5; i++) {
-        playRound();
-    }
-    showWinner(computerScore, playerScore);
-}
+// function playGame() {
+//     for (let i = 0; i < 5; i++) {
+//         playRound();
+//     }
+//     showWinner(computerScore, playerScore);
+// }
+
+
 
 function showWinner(computerScore, playerScore) {
     if (playerScore > computerScore) {
@@ -78,8 +80,22 @@ let playerScore = 0;
 let buttonElement = document.getElementById("start-button");
 console.log(buttonElement);
 
-buttonElement.addEventListener("click", playGame);
+// Event Listeners per button
+const rockButton = document.querySelector("#rock");
+const paperButton = document.querySelector("#paper");
+const scissorsButton = document.querySelector("#scissors");
 
+rockButton.addEventListener("click", () => {
+
+});
+
+paperButton.addEventListener("click", () => {
+
+});
+
+scissorsButton.addEventListener("click", () => {
+
+});
 
 
 
